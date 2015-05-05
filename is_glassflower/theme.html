@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+var getById = (typeof document.getElementById != "undefined");
+
+function toggleDisplay(objname,display1,display2){
+
+    if(!getById) return;
+	
+    obj = getRef(objname);
+    
+    if(obj.style.display == display2)
+	obj.style.display = display1;
+    else
+	obj.style.display = display2;
+
+    // Set cookie
+    var expdate = new Date ();
+    expdate.setTime (expdate.getTime() + (24 * 60 * 60 * 1000 * 31));
+    ckstr = escape(obj.style.display);
+    SetCookie ("disp_"+objname, ckstr, expdate, "/");
+}
+
+function getRef(obj){
+    if(getById)
+	return(typeof obj == "string") ? document.getElementById(obj) : obj;
+}
+
+function getCookieVal (offset) {
+    var endstr = document.cookie.indexOf (";", offset);
+    if (endstr == -1)
+    endstr = document.cookie.length;
+    return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie (name) {
+    var arg = name + "=";
+    var alen = arg.length;
+    var clen = document.cookie.length;
+    var i = 0;
+    while (i < clen) {
+        var j = i + alen;
+        if (document.cookie.substring(i, j) == arg)
+            return getCookieVal (j);
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0) break;
+    }
+    return null;
+}
+
+function SetCookie (name, value) {
+    var argv = SetCookie.arguments;
+    var argc = SetCookie.arguments.length;
+    var expires = (argc > 2) ? argv[2] : null;
+    var path = (argc > 3) ? argv[3] : null;
+    var domain = (argc > 4) ? argv[4] : null;
+    var secure = (argc > 5) ? argv[5] : false;
+    document.cookie = name + "=" + escape (value) +
+        ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+        ((path == null) ? "" : ("; path=" + path)) +
+        ((domain == null) ? "" : ("; domain=" + domain)) +
+        ((secure == true) ? "; secure" : "");
+}
+
+//-->
+</script>
+<!-- このテーマに含まれる画像の無断転用を禁止します -->
+<!-- Unapproved diversion of the picture contained in this theme is forbidden. -->
+</head>
+<body id="main" style="padding-left:130px;">
+<table cellspacing="0" cellpadding="0" border="0" style="width:850px;">
+<tr>
+	<td>
+	
+<TABLE border="0" cellpadding="0" cellspacing="0" style="width:800px;">
+<TR>
+<TD><IMG src="<{$xoops_imageurl}>images/gf-c1a.gif" width="80" height="80" border="0" /></TD>
+<TD align="left" style="background-image:url(<{$xoops_imageurl}>images/gf-u.gif);width:100%;" /><IMG src="<{$xoops_imageurl}>images/gf-c1r.gif" width="40" height="80" border="0" /></TD>
+<TD>
+<IMG src="<{$xoops_imageurl}>images/gf-c2.gif" width="80" height="80" border="0" /></TD>
+</TR>
+<TR>
+<TD style="vertical-align:top; background-image:url(<{$xoops_imageurl}>images/gf-l.gif);height:100%;" /><IMG src="<{$xoops_imageurl}>images/gf-c1un.gif" width="80" height="40" border="0" /></TD>
+<TD>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td><h2>+ ImageSquare + my xoops site.....</h2></td></tr>
+<tr><td align="center">
+			<a href="<{$xoops_url}>/"><IMG src="<{$xoops_imageurl}>images/home.gif" /></a>
+			<a href="<{$xoops_url}>/modules/news/"><IMG src="<{$xoops_imageurl}>images/news.gif" /></a>
+			<a href="<{$xoops_url}>/modules/newbb/"><IMG src="<{$xoops_imageurl}>images/forum.gif" /></a>
+			<a href="<{$xoops_url}>/modules/mydownloads/"><IMG src="<{$xoops_imageurl}>images/dl.gif" /></a>
+			<a href="<{$xoops_url}>/search.php"><IMG src="<{$xoops_imageurl}>images/search.gif" /></a>
+			<a href="<{$xoops_url}>/modules/xoopsfaq/"><IMG src="<{$xoops_imageurl}>images/faq.gif" /></a>
+</td></tr>
+<tr><td>
+		<table cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="50%" align="left">
+			<img src="<{$xoops_imageurl}>images/swich_l.gif" width="17" height="25" alt="block control" class="pointer" onclick="toggleDisplay('left','block','none')" />
+			</td>
+			<td nowrap>Welcome to my homepage !</td>
+			<td width="50%" align="right">
+			<{if $xoops_showrblock == 1}>
+			<img src="<{$xoops_imageurl}>images/swich_r.gif" width="17" height="25" alt="block control" class="pointer" onclick="toggleDisplay('right','block','none')" />
+			<{/if}>
+			<{if $xoops_showrblock == 0}>
+			<img src="<{$xoops_imageurl}>images/swi_off.gif" width="17" height="25" alt="open and close right-block" alt="block control" />
+			<{/if}>
+			</td>
+		</tr>
+		</table>
+
+</td></tr>
+</table>
+</TD>
+
+<TD style="vertical-align:bottom;background-image:url(<{$xoops_imageurl}>images/gf-r.gif);height:100%;" /><IMG src="<{$xoops_imageurl}>images/gf-c4u.gif" width="80" height="40" border="0" /></TD>
+</TR>
+
+<TR>
+<TD><IMG src="<{$xoops_imageurl}>images/gf-c3.gif" width="80" height="80" border="0" /></TD>
+<TD align="right" style="background-image:url(<{$xoops_imageurl}>images/gf-un.gif)" /><IMG src="<{$xoops_imageurl}>images/gf-c4l.gif" width="40" height="80" border="0" /></TD>
+<TD><IMG src="<{$xoops_imageurl}>images/gf-c4a.gif" width="80" height="80" border="0" /></TD>
+</TR>
+</TABLE>
+
+</td>
+</tr>
+
+<tr>
+	<td>
+	<table>
+
+	<tr>
+		<td align="center">
+		<table cellspacing="2" cellpadding="2">
+		<tr>
+			<td id="left" width="170">
+			<script type="text/javascript">
+			<!-- Begin
+			if (GetCookie("disp_left")) {
+				obj = getRef("left");
+				obj.style.display = GetCookie("disp_left");
+			}
+			-->
+			</script>
+			<!-- Start left blocks loop -->
+			<{foreach item=block from=$xoops_lblocks}>
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tr><td><img src="<{$xoops_imageurl}>images/t_l.gif" /></td>
+					<td class="blockTitle2"><{$block.title}></td>
+				<td><img src="<{$xoops_imageurl}>images/t_r.gif" /></td></tr>
+
+				<tr>
+					<td class="blockContent2" colspan="3"><{$block.content}></td>
+				</tr>
+				</table>
+<br />
+			<{/foreach}>
+			<!-- End left blocks loop -->
+			</td>
+			<td style="padding: 0px 5px 0px;">
+			<!-- Display center blocks if any -->
+			<{if $xoops_showcblock == 1}>
+			<table cellspacing="0">
+			<tr>
+				<td width="100%" colspan="2">
+				<!-- Start center-center blocks loop -->
+				<{foreach item=block from=$xoops_ccblocks}>
+				<table class="outline">
+				<tr>
+					<td>
+					<table cellspacing="1" cellpadding="5">
+					<tr>
+						<td class="blockTitle"> <{$block.title}></td>
+					</tr>
+
+					<tr>
+						<td class="blockContent"><{$block.content}></td>
+					</tr>
+					</table>
+					</td>
+				</tr>
+				</table><br />
+				<{/foreach}>
+				<!-- End center-center blocks loop -->
+				</td>
+			</tr>
+
+			<tr>
+				<td width="50%">
+				<!-- Start center-left blocks loop -->
+				<{foreach item=block from=$xoops_clblocks}>
+				<table class="outline">
+				<tr>
+					<td>
+					<table cellspacing="1" cellpadding="5">
+					<tr>
+						<td class="blockTitle"> <{$block.title}></td>
+					</tr>
+
+					<tr>
+						<td class="blockContent"><{$block.content}></td>
+					</tr>
+					</table>
+					</td>
+				</tr>
+				</table><br />
+				<{/foreach}>
+				<!-- End center-left blocks loop -->
+				</td>
+				<td width="50%">
+				<!-- Start center-right blocks loop -->
+				<{foreach item=block from=$xoops_crblocks}>
+				<table class="outline">
+				<tr>
+					<td>
+					<table cellspacing="1" cellpadding="5">
+					<tr>
+						<td class="blockTitle"> <{$block.title}></td>
+					</tr>
+
+					<tr>
+						<td class="blockContent"><{$block.content}></td>
+					</tr>
+					</table>
+					</td>
+				</tr>
+				</table><br />
+				<{/foreach}>
+				<!-- End center-right blocks loop -->
+				</td>
+			</tr>
+			</table>
+			<{/if}>
+			<!-- End display center blocks -->
+			<div id="content"><{$xoops_contents}></div>
+			</td>
+			<{if $xoops_showrblock == 1}>
+			<td id="right" width="170" align="center">
+			<script type="text/javascript">
+			<!-- Begin
+			if (GetCookie("disp_right")) {
+				obj = getRef("right");
+				obj.style.display = GetCookie("disp_right");
+			}
+			-->
+			</script>
+			<{foreach item=block from=$xoops_rblocks}>
+				<table cellspacing="0" cellpadding="2">
+				<tr>
+					<td>
+					
+					<table cellspacing="0" cellpadding="0">
+					<tr><td><img src="<{$xoops_imageurl}>images/t_l.gif" /></td>
+						<td class="blockTitle2"><{$block.title}></td>
+					<td><img src="<{$xoops_imageurl}>images/t_r.gif" /></td></tr>
+					<tr>
+						<td class="blockContent2" colspan="3"><{$block.content}></td>
+					</tr>
+					</table>
+					</td>
+				</tr>
+				</table><br />
+			<{/foreach}>
+			<!-- End right blocks loop -->
+			<{/if}>
+			</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+	<td class="topnav">
+	<div style="text-align: center; padding: 3px; font-size: 10px;">
+	<{$xoops_footer}><br />
+	<a href="http://www6.ocn.ne.jp/~white-b/" target="_blank">Images by WhiteBoard</a> :: &copy 2003 <a href="http://i-you.org/" target="_blank">ImageSquare</a>
+	</div>
+	</td>
+<td class="topnav" width="32" height="32"><a href="http://www6.ocn.ne.jp/~white-b/" target="_blank"><img src="<{$xoops_imageurl}>images/wb-apple.gif" /></a></td>
+</tr>
+</table>
+</body>
+</html>
